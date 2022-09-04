@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drop Dead: A Dice Game</title>
+        <link href="./styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Drop Dead</h1>
+                <h2>A Dice Game</h2>
+            </header>
+
+            <section id="computer-score-div">
+                <h2 class="score-title">Computer's Score</h2>
+                <p id="computer-score" class="score-num">0</p>
+            </section>
+
+            <section id="dice">
+                <h2 class="rules-heading">Scoring Rules</h2>
+                <p class="rules">To play, roll the dice. Any rolled dice with the value 2 or 5 will be removed from future rolls. All other dice will be added to your score and available for future rolls. Keep rolling until all dice are removed. Beat the computer's score to win!</p>
+                <button id="start-game-btn">Start Game</button>
+            </section>
+            <h2 id="display-results"></h2>
+
+            <section id="player-score-div">
+                <h2 class="score-title">Your Score</h2>
+                <p id="player-score" class="score-num">0</p>
+            </section>
+            
+            <footer>
+                <button id="roll">Roll</button>
+                <button id="play-again">Play Again</button>
+            </footer>
+            <script type="module" src="index.js"></script>
+    </div>
+    </body>
+
+
+
+
+</html>

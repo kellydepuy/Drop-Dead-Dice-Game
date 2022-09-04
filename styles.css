@@ -1,0 +1,132 @@
+body {
+    background-color: #EAD6CD;
+    color: #394F8A;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.rules-heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.rules {
+    margin-top: 0;
+}
+
+/* ***** Dice ***** */
+#dice {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-wrap: wrap;
+    background-color: #f1eeed;
+    padding: 3em;
+    margin: 2em;
+    border-radius: 10px;
+    line-height: 1.5em;
+    box-shadow: 0px 1px 3px rgb(160, 123, 129);
+}
+
+.die-container, .die-div {
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.die-div {
+    background-color: white;
+    text-align: center;
+}
+
+.die-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 25% 0;
+    padding: 0;
+}
+
+.frozen {
+    background-color: rgb(174, 173, 173);
+    opacity: .5;
+}
+
+/* ***** Buttons ***** */
+
+button {
+    background-color: #394F8A;
+    color: #f1eeed;
+    font-weight: bold;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#roll {
+   display: none;
+   width: fit-content;
+   margin: 0 auto;
+}
+
+#play-again {
+    display: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #4A5FC1;
+}
+
+/* ***** Scores ***** */
+
+#player-score-div, #computer-score-div {
+    background-color: #E5B9A8;
+    padding: 1em 0 .1em 0;
+    margin: 2.5em 1em;
+    border-radius: 10px;
+}
+
+.score-title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.score-num {
+    font-size: 2rem;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+
+@media (min-width: 550px) {
+    .container {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    #player-score-div, #computer-score-div {
+        max-width: 50%;
+        margin: 2em auto;
+    }
+}
